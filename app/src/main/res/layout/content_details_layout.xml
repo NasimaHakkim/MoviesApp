@@ -1,0 +1,134 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrolling_container"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rootCardView"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_marginTop="8dp"
+        android:layout_height="match_parent"
+        >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+
+            android:layout_centerInParent="true"
+            android:id="@+id/progressBar"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            tools:text="MONKEY FOREST"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:transitionName="titleTransition" />
+
+
+        <TextView
+            android:id="@+id/movieLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:textSize="16dp"
+            tools:text="1Hour 35 minute"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="7/10"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_below="@+id/movieLimit"/>
+
+
+        <TextView
+            android:id="@+id/starCastText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating"
+            android:paddingLeft="8dp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            tools:text="Language : "/>
+
+        <TextView
+            android:id="@+id/starCast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/starCastText"
+            tools:text="Tom Cruise, Angelina Jolie, Brad Pitt"
+            />
+
+
+        <TextView
+            android:id="@+id/summaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/starCast"
+            android:textColor="@android:color/white"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"/>
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summaryText"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:padding="8dp"
+            tools:text="Nice movie. Go and watch . If you dont watch its your loss. People rated it 5 star. thats not our problem."
+            android:textColor="@android:color/white" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
